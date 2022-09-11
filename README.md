@@ -1,5 +1,5 @@
 # InfSecurity
-Тут какая-то ахинея. Я предупреждал :)
+Тут какая-то ахинея====
 
 Пример для бесконечного YES
 [codes.txt](https://github.com/Surface1U/InfSecurity/files/9542559/codes.txt)
