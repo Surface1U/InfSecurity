@@ -126,3 +126,72 @@ int main()
     generateGrayarr(n);
     return 0;
 }
+
+#lab 4
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include <fstream>
+
+using namespace std;
+
+int digits(int n)
+{
+   int  i = 0;
+    for (; n > 0; i++) {
+        n /= 10;
+    }
+    return i;
+}
+
+int isprime(int num)
+{
+
+    if ((num * num) % 24 == 1)
+    {
+        return 1;
+    }
+
+    return 0;
+
+}
+
+int compose(int n)
+{
+    int product = 1;
+
+    while (n != 0)
+    {
+        product = product * (n % 10);
+        n = n / 10;
+    }
+
+    return product;
+}
+
+
+void brut()
+{
+
+    ofstream codes1("C:\\Users\\s0163528\\Desktop\\codes1.txt");
+    int n = 9999;
+    int i = 0;
+    while (n-i>0)
+    {
+        if (n - i >= 0 && digits(n-i)==4 && isprime(n-i)==1 && compose(n-i)==243)
+            codes1<< "Permutations: " << n - i << endl;
+ 
+        i++;
+    }
+ 
+
+}
+
+int main()
+{
+
+    brut();
+    return 0;
+}
